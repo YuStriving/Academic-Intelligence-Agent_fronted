@@ -8,7 +8,7 @@
     <div class="max-w-[calc(100%-3rem)]">
       <div class="relative group">
         <div class="bg-theme-bg-chat-ai rounded-2xl rounded-tl-sm px-5 py-3.5 shadow-md transition-colors duration-300">
-          <p class="text-[15px] text-theme-text-inverse leading-relaxed">{{ content }}</p>
+          <p :class="['text-[15px] text-theme-text-inverse leading-relaxed', content.length <= 10 ? 'whitespace-nowrap' : '']">{{ content }}</p>
           <div v-if="papersFound !== undefined" class="mt-3 flex items-center gap-2">
             <span class="text-xs text-green-400 flex items-center gap-1">
               <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">

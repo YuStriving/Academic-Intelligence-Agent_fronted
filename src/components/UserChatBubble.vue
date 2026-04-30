@@ -4,7 +4,7 @@
       <div class="max-w-[calc(100%-5rem)]">
         <div class="relative group">
           <div class="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/30 dark:to-indigo-900/20 rounded-2xl rounded-tr-sm border-2 border-blue-200 dark:border-blue-700 px-6 py-4 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5">
-            <p class="text-[16px] font-medium text-gray-800 dark:text-gray-100 leading-relaxed">{{ content }}</p>
+            <p :class="['text-[16px] font-medium text-gray-800 dark:text-gray-100 leading-relaxed', content.length <= 10 ? 'whitespace-nowrap' : '']">{{ content }}</p>
           </div>
           <div class="flex items-center justify-end gap-2 mt-2 px-1">
             <span class="text-[12px] text-gray-500 dark:text-gray-400 font-medium">{{ formattedTime }}</span>
