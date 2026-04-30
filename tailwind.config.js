@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
@@ -7,9 +8,107 @@ export default {
   theme: {
     extend: {
       colors: {
-        sidebar: '#1a2538',
-        'sidebar-hover': '#243347',
-        'sidebar-active': '#2d4059',
+        sidebar: 'var(--bg-sidebar)',
+        'sidebar-hover': 'var(--bg-sidebar-hover)',
+        'sidebar-active': 'var(--bg-sidebar-active)',
+        theme: {
+          bg: {
+            primary: 'var(--bg-primary)',
+            secondary: 'var(--bg-secondary)',
+            tertiary: 'var(--bg-tertiary)',
+            elevated: 'var(--bg-elevated)',
+            hover: 'var(--bg-hover)',
+            active: 'var(--bg-active)',
+            input: 'var(--bg-input)',
+            'input-focus': 'var(--bg-input-focus)',
+            card: 'var(--bg-card)',
+            'card-hover': 'var(--bg-card-hover)',
+            modal: 'var(--bg-modal)',
+            tooltip: 'var(--bg-tooltip)',
+            badge: 'var(--bg-badge)',
+            sidebar: 'var(--bg-sidebar)',
+            'sidebar-hover': 'var(--bg-sidebar-hover)',
+            'sidebar-active': 'var(--bg-sidebar-active)',
+            'sidebar-tooltip': 'var(--bg-sidebar-tooltip)',
+            'chat-user': 'var(--bg-chat-user)',
+            'chat-ai': 'var(--bg-chat-ai)',
+            'paper-card': 'var(--bg-paper-card)',
+            'paper-detail': 'var(--bg-paper-detail)',
+            code: 'var(--bg-code)',
+            success: 'var(--bg-success)',
+            warning: 'var(--bg-warning)',
+            error: 'var(--bg-error)',
+            info: 'var(--bg-info)',
+          },
+          text: {
+            primary: 'var(--text-primary)',
+            secondary: 'var(--text-secondary)',
+            tertiary: 'var(--text-tertiary)',
+            inverse: 'var(--text-inverse)',
+            link: 'var(--text-link)',
+            placeholder: 'var(--text-placeholder)',
+            disabled: 'var(--text-disabled)',
+            tooltip: 'var(--text-tooltip)',
+            code: 'var(--text-code)',
+            sidebar: 'var(--text-sidebar)',
+            'sidebar-hover': 'var(--text-sidebar-hover)',
+            'sidebar-active': 'var(--text-sidebar-active)',
+            'sidebar-placeholder': 'var(--text-sidebar-placeholder)',
+            success: 'var(--text-success)',
+            warning: 'var(--text-warning)',
+            error: 'var(--text-error)',
+            info: 'var(--text-info)',
+          },
+          border: {
+            primary: 'var(--border-primary)',
+            secondary: 'var(--border-secondary)',
+            tertiary: 'var(--border-tertiary)',
+            input: 'var(--border-input)',
+            'input-focus': 'var(--border-input-focus)',
+            card: 'var(--border-card)',
+            sidebar: 'var(--border-sidebar)',
+            badge: 'var(--border-badge)',
+            focus: 'var(--border-focus)',
+            danger: 'var(--border-error)',
+            success: 'var(--border-success)',
+            error: 'var(--border-error)',
+          },
+          accent: {
+            primary: 'var(--accent-primary)',
+            hover: 'var(--accent-hover)',
+            light: 'var(--accent-light)',
+            active: 'var(--accent-active)',
+          },
+          btn: {
+            'primary-bg': 'var(--btn-primary-bg)',
+            'primary-text': 'var(--btn-primary-text)',
+            'primary-hover': 'var(--btn-primary-hover)',
+            'secondary-bg': 'var(--btn-secondary-bg)',
+            'secondary-text': 'var(--btn-secondary-text)',
+            'secondary-hover': 'var(--btn-secondary-hover)',
+            'danger-bg': 'var(--btn-danger-bg)',
+            'danger-hover': 'var(--btn-danger-hover)',
+          },
+          switch: {
+            bg: 'var(--switch-bg)',
+            active: 'var(--switch-active)',
+            thumb: 'var(--switch-thumb)',
+          },
+          score: {
+            good: {
+              bg: 'var(--bg-score-good)',
+              text: 'var(--text-score-good)',
+            },
+            medium: {
+              bg: 'var(--bg-score-medium)',
+              text: 'var(--text-score-medium)',
+            },
+            low: {
+              bg: 'var(--bg-score-low)',
+              text: 'var(--text-score-low)',
+            }
+          }
+        }
       }
     },
   },
